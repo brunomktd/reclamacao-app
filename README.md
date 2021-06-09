@@ -2,6 +2,13 @@
 
 Aplicação desenvolvida com Java 11 Spring boot e Spring data JPA, utilizando banco de dados Nosql Mongodb. Antes de executar certifique-se de ter instalado em sua máquina a JDK 11, Git e Maven.
 
+##Rodar com o Docker
+Certifique-se de ter o docker instalado na máquina
+
+`docker run -d -p 8080:8080 brunomktd/app-reclamacao:alpha`
+
+##Rodar com Maven
+
 Faça o download da aplicação:
 
 `git clone https://github.com/brunomktd/reclamacao-app.git`
