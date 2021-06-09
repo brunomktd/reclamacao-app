@@ -11,3 +11,38 @@ Acesse a pasta da aplicação onde contém o pom.xml e rode os seguintes comando
 `mvn clean install -DskipTests`
 
 `java -jar target/app-0.0.1-SNAPSHOT.jar`
+
+###Rotas para consultas:
+
+####Empresa
+
+Cadastrar empresa:
+`POST: http://localhost:8080/empresas`
+
+Atualizar:
+`PUT http://localhost:8080/empresas/empresa/{id}`
+
+body:
+`{
+    "nome": "String"
+}`
+
+Buscar todas empresas:`GET http://localhost:8080/empresas `
+
+
+Buscar empresa por Id: `GET http://localhost:8080/empresas/empresa/{id}`
+
+####Reclamações:
+
+Registrar Reclamação
+`POST http://localhost:8080/reclamacoes/empresa/{empresaId}`
+
+body:
+`{
+    "titulo": "String",
+    "descricao": "String",
+    "localidade": "String"
+}`
+
+Buscar reclamações por empresa: `GET http://localhost:8080/reclamacoes/empresa/{empresaId}`
+
